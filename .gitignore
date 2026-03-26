@@ -27,3 +27,13 @@
 
 # Dotenv and similar local-only files
 *.local
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/copilot.data.migration.ask2agent.xml
+/.idea/highlightedFiles.xml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/prettier.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/zkrat-kolektiv.iml
