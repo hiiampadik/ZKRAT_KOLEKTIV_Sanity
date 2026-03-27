@@ -13,17 +13,7 @@ export const project = defineType({
       type: 'internationalizedArrayString',
       validation: (rule) => rule.required(),
     }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: (doc: {title?: Array<{_key: string; value?: string}>}) =>
-          doc.title?.find((t) => t._key === 'en')?.value || '',
-      },
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
+defineField({
       name: 'year',
       title: 'Year',
       type: 'number',
@@ -41,7 +31,6 @@ export const project = defineType({
           type: 'internationalizedArrayString',
         }),
       ],
-      validation: (rule) => rule.required(),
     }),
     defineField({
       name: 'description',
@@ -94,15 +83,34 @@ export const project = defineType({
               type: 'string',
               validation: (rule) => rule.required(),
             }),
-            defineField({
-              name: 'role',
-              title: 'Role',
-              type: 'internationalizedArrayString',
-            }),
           ],
           preview: {
             select: {title: 'name'},
           },
+        }),
+      ],
+    }),
+    defineField({
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'reference',
+          to: [{type: 'tag'}],
+        }),
+      ],
+    }),
+    defineField({
+      name: 'videos',
+      title: 'Videos',
+      description: 'Odkazy na videa z Instagramu a Vimea',
+      type: 'array',
+      of: [
+        defineArrayMember({
+          type: 'url',
+          validation: (rule) =>
+            rule.uri({allowRelative: false, scheme: ['https']}),
         }),
       ],
     }),

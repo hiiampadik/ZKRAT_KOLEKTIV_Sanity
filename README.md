@@ -1,9 +1,41 @@
-# Sanity Clean Content Studio
+# PopMesse
 
-Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
+TitleCS: PopMesse
 
-Now you can do the following things:
+TitleEN: PopMesse
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the Sanity community](https://www.sanity.io/community/join?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+Tagy: VJing
+
+Year: 2023
+
+Client: Popmesse https://popmesse.cz/
+
+Tým: Samuel Antol, Marek Augustin, Bronislav Musil
+
+# Kultivovaná Města
+
+TitleCS: Konference „Lidé, kteří mění naše města“
+
+TitleEN: Conference “Lidé, kteří mění naše města”
+
+Tagy: VJing
+
+Year: 2025
+
+Client: Veronika Rút https://veronikarut.com/
+
+Tým: Samuel Antol, Petr Žemla
+
+# Rave Vol 3.
+
+TitleCS: Rave Vol. 3
+
+TitleEN: Rave Vol. 3
+
+Tagy: Stage Design, VJing
+
+Year: 2024
+
+Client: ZE MĚ Projekt [https://www.zeme-projekt.cz/](https://www.zeme-projekt.cz/?gad_campaignid=22492409276&gbraid=0AAAAA_XX2xdoOjY4wxLyegQTKfarM5Ggl)
+
+Tým: Samuel Antol, Petr Žemla, Marek Augustin, Bronislav Musil, Matyáš Bálek
