@@ -13,7 +13,7 @@ export const project = defineType({
       type: 'internationalizedArrayString',
       validation: (rule) => rule.required(),
     }),
-defineField({
+    defineField({
       name: 'year',
       title: 'Year',
       type: 'number',
@@ -24,6 +24,7 @@ defineField({
       title: 'Cover',
       type: 'image',
       options: {hotspot: true},
+      validation: (rule) => rule.required(),
       fields: [
         defineField({
           name: 'alt',
@@ -82,6 +83,12 @@ defineField({
               title: 'Name',
               type: 'string',
               validation: (rule) => rule.required(),
+            }),
+            defineField({
+              name: 'external',
+              title: 'Externí',
+              type: 'boolean',
+              initialValue: false,
             }),
           ],
           preview: {
